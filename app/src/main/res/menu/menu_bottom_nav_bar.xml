@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+        android:id="@+id/action_dashboard"
+        android:icon="@drawable/bottom_icon_dashboard"
+        android:title="@string/action_dashboard"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_menus"
+        android:icon="@drawable/bottom_icon_menu"
+        android:title="@string/action_menus"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_AR"
+        android:icon="@drawable/bottom_icon_ar"
+        android:title="@string/action_AR"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_trip_planner"
+        android:icon="@drawable/bottom_icon_calendar"
+        android:title="@string/action_trip_planner"
+        app:showAsAction="ifRoom"/>
+</menu>

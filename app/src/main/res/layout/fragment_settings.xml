@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/top_toolbar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_close"
+        app:layout_constraintBottom_toBottomOf="@+id/top_toolbar_settings"
+        app:layout_constraintEnd_toEndOf="@+id/top_toolbar_settings"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/TextHeaderTheme"
+        android:id="@+id/text_account_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Account Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_toolbar_settings" />
+
+    <TextView
+        android:id="@+id/text_name_of_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Name of User"
+        app:layout_constraintStart_toStartOf="@+id/text_account_details"
+        app:layout_constraintTop_toBottomOf="@+id/text_account_details" />
+
+    <TextView
+        android:id="@+id/text_email_of_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="@+id/text_name_of_user"
+        app:layout_constraintTop_toBottomOf="@+id/text_name_of_user" />
+
+    <TextView
+        android:id="@+id/text_password_header"
+        style="@style/TextHeaderTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="@+id/text_email_of_user"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_email_of_user" />
+
+    <EditText
+        android:id="@+id/input_password_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="14"
+        android:theme="@style/EditTextTheme"
+        android:inputType="textPassword"
+        android:hint="Current password"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text_password_header"
+        app:layout_constraintTop_toBottomOf="@+id/text_password_header" />
+
+    <EditText
+        android:id="@+id/input_password_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="14"
+        android:theme="@style/EditTextTheme"
+        android:inputType="textPassword"
+        android:hint="New password"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/input_password_current"
+        app:layout_constraintTop_toBottomOf="@+id/input_password_current" />
+
+    <EditText
+        android:id="@+id/input_password_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="14"
+        android:theme="@style/EditTextTheme"
+        android:inputType="textPassword"
+        android:hint="New password, again"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/input_password_new"
+        app:layout_constraintTop_toBottomOf="@+id/input_password_new" />
+
+    <TextView
+        android:id="@+id/text_error_settings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

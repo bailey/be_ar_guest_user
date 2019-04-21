@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Be AR Guest</string>
+    <string name="action_search">Search</string>
+    <string name="action_dashboard">Dashboard</string>
+    <string name="action_menus">Menus</string>
+    <string name="action_AR">AR Scanner</string>
+    <string name="action_trip_planner">Trip Planner</string>
+    <string name="fit_image_to_scan">Fit Image to Scan</string>
+
+    <!-- Login error codes -->
+    <string name="login_err_invalid_password">Password is incorrect.</string>
+    <string name="login_err_invalid_email">Sorry, that is not a correctly formatted email address.</string>
+    <string name="login_err_user_not_found">We don\'t have a user registered with that email. Try another, or create an account!</string>
+    <string name="login_err_missing_fields">Please fill in the required fields.</string>
+    <string name="login_err_activity_null">Error: Firebase activity not loading</string>
+
+    <!-- Create user error codes -->
+    <string name="create_user_err_pwd_mismatch">Try again: Passwords do not match</string>
+    <string name="create_user_err_email_dup">An account associated with this email already exists. Try again, or recover your password.</string>
+    <string name="create_user_err_weak_pwd">Try again: Password is too weak</string>
+    <string name="create_user_err_invalid_email">Must enter a correctly formatted email address.</string>
+
+    <!-- Placeholder for AR -->
+    <string name="ar_incompatible_error">The Augmented Reality Menu Scanner is not compatible with this device. Please browse our listed menus to obtain meal data.</string>
+
+    <!-- Change account settings error codes -->
+    <string name="settings_err_empty_fields">Please fill in the required fields.</string>
+    <string name="settings_err_pwd_mismatch">Passwords do not match.</string>
+    <string name="settings_err_reset_failed">"Sorry, we aren't able to reset your password right now. Please try again later."</string>
+    <string name="settings_err_reauth">Your old password was entered incorrectly. Please enter it again.</string>
+
+    <!-- Forgot Password error and success codes -->
+    <string name="forgot_pwd_success">Password reset email sent!</string>
+    <string name="forgot_pwd_empty_email">"Email entered for password reset is blank, please try again."</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

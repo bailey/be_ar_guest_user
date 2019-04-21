@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!-- Icons for top toolbar -->
+
+    <!-- Not implemented
+    <item
+    android:id="@+id/action_search"
+    android:icon="@drawable/top_toolbar_icon_search"
+    android:title="@string/action_search"
+    app:showAsAction="ifRoom"/>
+    -->
+
+    <item
+    android:id="@+id/action_settings"
+    android:title="Settings"
+    app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_signout"
+        android:title="Signout"
+        app:showAsAction="never"/>
+
+</menu>
